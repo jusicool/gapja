@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>īť °øÀ¯</title>
+<script type="text/JavaScript" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+    <input type="button" onClick="sendLinkCustom();" value="Custom"/>
+    <input type="button" onClick="sendLinkDefault();" value="Default"/>
+
+<script type="text/javascript">
+    function sendLinkCustom() {
+        Kakao.init("[6c36475a62fca8386c0a0964809dcaf1]");
+        Kakao.Link.sendCustom({
+            templateId: 88124
+        });
+    }
+</script>
+
+<script>
+try {
+  function sendLinkDefault() {
+    Kakao.init('[6c36475a62fca8386c0a0964809dcaf1]')
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: 'µþ±⠄¡Áɀͧ,
+        description: '#ĉÀ͠#µþ±⠣»µ¿ #īƤ #ºЀ§±⠣¼Ұ³ƃ',
+        imageUrl:
+          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845,
+      },
+      buttons: [
+        {
+          title: 'À¥À¸·Πº¸±⧬
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+        {
+          title: '¾ۀ¸·Πº¸±⧬
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+      ],
+    })
+  }
+; window.kakaoDemoCallback && window.kakaoDemoCallback() }
+catch(e) { window.kakaoDemoException && window.kakaoDemoException(e) }
+</script>
+   
+</body>
+</html>
